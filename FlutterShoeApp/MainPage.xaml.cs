@@ -45,6 +45,174 @@ namespace FlutterShoeApp
                 {
                     Name="Casual",
                     Company= "Bata",
+                    Price = "125 $",
+                    ImageUrl = "e.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "128 $",
+                    ImageUrl = "a.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Sparx",
+                    Price = "1220 $",
+                    ImageUrl = "f.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "90 $",
+                    ImageUrl = "b.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Puma",
+                    Price = "890 $",
+                    ImageUrl = "c.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Soccer",
+                    Company= "Nike",
+                    Price = "680 $",
+                    ImageUrl = "d.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Casual",
+                    Company= "Bata",
+                    Price = "120 $",
+                    ImageUrl = "e.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "1350 $",
+                    ImageUrl = "a.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Sparx",
+                    Price = "12900 $",
+                    ImageUrl = "f.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "12780 $",
+                    ImageUrl = "b.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Puma",
+                    Price = "89800 $",
+                    ImageUrl = "c.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Soccer",
+                    Company= "Nike",
+                    Price = "60045 $",
+                    ImageUrl = "d.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Casual",
+                    Company= "Bata",
+                    Price = "12078 $",
+                    ImageUrl = "e.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "123750 $",
+                    ImageUrl = "a.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Sparx",
+                    Price = "120678 $",
+                    ImageUrl = "f.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "120 $",
+                    ImageUrl = "b.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Puma",
+                    Price = "800 $",
+                    ImageUrl = "c.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Soccer",
+                    Company= "Nike",
+                    Price = "600 $",
+                    ImageUrl = "d.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Casual",
+                    Company= "Bata",
+                    Price = "120 $",
+                    ImageUrl = "e.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "120 $",
+                    ImageUrl = "a.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Sparx",
+                    Price = "120 $",
+                    ImageUrl = "f.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Nike",
+                    Price = "120 $",
+                    ImageUrl = "b.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Sneakers",
+                    Company= "Puma",
+                    Price = "800 $",
+                    ImageUrl = "c.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Soccer",
+                    Company= "Nike",
+                    Price = "600 $",
+                    ImageUrl = "d.jpg"
+                },
+                new ShoeDetail()
+                {
+                    Name="Casual",
+                    Company= "Bata",
                     Price = "120 $",
                     ImageUrl = "e.jpg"
                 },
@@ -73,7 +241,7 @@ namespace FlutterShoeApp
             {
                 ShoeDetail detail = e.CurrentSelection[0] as ShoeDetail;
                 DetailPage Page = new DetailPage(detail);
-                SharedTransitionNavigationPage.SetTransitionSelectedGroup(this, detail.ImageUrl);
+                SharedTransitionNavigationPage.SetTransitionSelectedGroup(this, detail.Price);
                 await Navigation.PushAsync(Page);
                 
             }

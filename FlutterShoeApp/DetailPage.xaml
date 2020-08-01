@@ -4,7 +4,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
@@ -12,11 +11,10 @@
     mc:Ignorable="d">
     <ContentPage.Content>
         <Grid>
-            <ff:CachedImage
+            <Image
                 x:Name="BackImage"
                 sharedTransitions:Transition.Name="DogImage"
                 Aspect="AspectFill"
-                DownsampleToViewSize="True"
                 HorizontalOptions="FillAndExpand"
                 Source="b.jpg"
                 VerticalOptions="FillAndExpand" />
