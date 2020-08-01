@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FlutterShoeApp.DetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+    xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <Grid>
+            <ff:CachedImage
+                x:Name="BackImage"
+                sharedTransitions:Transition.Name="DogImage"
+                Aspect="AspectFill"
+                DownsampleToViewSize="True"
+                HorizontalOptions="FillAndExpand"
+                Source="b.jpg"
+                VerticalOptions="FillAndExpand" />
+            <StackLayout VerticalOptions="End">
+                <StackLayout.Behaviors>
+                    <xamanimation:EntranceTransition Duration="1000" />
+                </StackLayout.Behaviors>
+                <Label
+                    x:Name="HeadingLabel"
+                    Padding="30,20,30,20"
+                    FontAttributes="Bold"
+                    FontSize="44"
+                    Text="Sneakers"
+                    TextColor="White"
+                    VerticalOptions="Start" />
+                <Label
+                    Padding="30,0,30,0"
+                    FontSize="20"
+                    Text="Size"
+                    TextColor="White"
+                    VerticalOptions="Start" />
+                <ScrollView Padding="30,10,30,30" Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Spacing="15">
+                        <Frame
+                            Padding="15"
+                            CornerRadius="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="42"
+                                TextColor="Black" />
+                        </Frame>
+                        <Frame
+                            Padding="15"
+                            CornerRadius="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="44"
+                                TextColor="Black" />
+                        </Frame>
+                        <Frame
+                            Padding="15"
+                            CornerRadius="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="46"
+                                TextColor="Black" />
+                        </Frame>
+                        <Frame
+                            Padding="15"
+                            CornerRadius="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="48"
+                                TextColor="Black" />
+                        </Frame>
+                        <Frame
+                            Padding="15"
+                            CornerRadius="10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                Text="50"
+                                TextColor="Black" />
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+                <Button
+                    Margin="30"
+                    BackgroundColor="White"
+                    CharacterSpacing="2"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    Text="Buy Now"
+                    TextColor="Black" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
